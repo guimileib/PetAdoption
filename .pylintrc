@@ -4,9 +4,12 @@ disable=
         C0114, # missing-module-docstring
         C0115, # missing-class-docstring
         C0116, # missing-function-docstring
-        W0703, # broad-except 
+        W0703, # broad-except
         C0209, # no-member
         E0015, # bad-continuation
+        E0401, # import-error
+        C0303, # trailing-newlines
+        C0321, # multiple-statements
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
@@ -328,7 +331,7 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+min-public-methods=0
 
 
 [EXCEPTIONS]

@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 venv
 storage.db
+.pylintrc
+__pycache__
 =======
 # Byte-compiled / optimized / DLL files
 __pycache__/

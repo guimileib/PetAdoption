@@ -1,4 +1,19 @@
 {
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.gitignore": true,
+        "**/__pycache__": true,
+        "**/*.pytest_cache": true,
+        "**/venv": true,
+        "**/storage.db": true,
+        "**/storage - (backup).db": true,
+        "**/.pylintrc": false,
+        "**/.pre-commit-config.yaml": false,
+
+    }
+
+
 }
