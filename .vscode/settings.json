@@ -10,7 +10,7 @@
         "**/venv": true,
         "**/storage.db": true,
         "**/storage - (backup).db": true,
-        "**/.pylintrc": true,
+        "**/.pylintrc": false,
         "**/.pre-commit-config.yaml": false,
 
     }
