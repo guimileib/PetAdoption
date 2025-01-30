@@ -4,7 +4,7 @@ from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInter
 
 class PersonCreatorController:
     def __init__(self, people_repository: PeopleRepositoryInterface) -> None:
-        self.people_repository = people_repository
+        self.__people_repository = people_repository
 
     def create(self, person_info: Dict) -> Dict:
         first_name = person_info['first_name']
@@ -24,7 +24,7 @@ class PersonCreatorController:
             raise Exception('Nome da pessoa inválido')
         
     def __insert_person_in_db(self, first_name: str, last_name: str, age: int, pet_id: int) -> None:
-        self.people_repository.insert_person(first_name, last_name, age, pet_id)        
+        self.__people_repository.insert_person(first_name, last_name, age, pet_id)        
 
     def __format_response(self, person_info: Dict) -> Dict:
         return {
