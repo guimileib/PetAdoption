@@ -7,5 +7,3 @@ class PetDeleterController(PetDeleterControllerInterface):
 
     def delete(self, name: str) -> None:
         self.__pet_repository.delete_pets(name)
-
-    

@@ -5,7 +5,7 @@ from src.models.sqlite.entities.pets import PetsTable
 class PetsRepositoryInterface(ABC):
 
     @abstractmethod
-    def  list_pets(self) -> List[PetsTable]:
+    def list_pets(self) -> List[PetsTable]:
         pass
 
     @abstractmethod

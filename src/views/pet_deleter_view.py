@@ -1,4 +1,4 @@
-from src.controllers.pet_deleter_controller import PetDeleterControllerInterface
+from src.controllers.interfaces.pet_deleter_controller import PetDeleterControllerInterface
 from .http_types.http_request import HttpRequest
 from .http_types.http_response import HttpResponse
 from .interfaces.view_interface import ViewInterface

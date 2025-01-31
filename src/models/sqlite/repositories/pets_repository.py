@@ -21,7 +21,7 @@ class PetsRepository(PetsRepositoryInterface):
                 (
                     database.session
                     .query(PetsTable)
-                    .filter(PetsTable.name ==name)
+                    .filter(PetsTable.name == name)
                     .delete()
                 )
                 database.session.commit() # confirma a ação
