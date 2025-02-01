@@ -1,7 +1,7 @@
 from typing import Dict
 import re # Regular expression operations
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
-from src.errors.errors_type.http_bad_request import HttpBadRequestError
+from src.errors.error_types.http_bad_request import HttpBadRequestError
 from .interfaces.person_creator_controller import PersonCreatorControllerInterface
 
 class PersonCreatorController(PersonCreatorControllerInterface):

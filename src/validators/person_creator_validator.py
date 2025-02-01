@@ -1,7 +1,7 @@
 #pylint: disable=E1123, disable=W0707
 from pydantic import BaseModel, constr, ValidationError
 from src.views.http_types.http_request import HttpRequest
-from src.errors.errors_type.http_unprocessable_entity import HttpUnprocessableEntityError
+from src.errors.error_types.http_unprocessable_entity import HttpUnprocessableEntityError
 
 def person_creator_validator(http_request: HttpRequest):
 
