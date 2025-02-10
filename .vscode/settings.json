@@ -4,7 +4,7 @@
 
     "files.exclude": {
         "**/.git": true,
-        "**/.gitignore": true,
+        "**/.gitignore": false,
         "**/__pycache__": true,
         "**/*.pytest_cache": true,
         "**/venv": true,
