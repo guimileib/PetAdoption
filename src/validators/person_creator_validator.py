@@ -3,7 +3,7 @@ from pydantic import BaseModel, constr, ValidationError
 from src.views.http_types.http_request import HttpRequest
 from src.errors.error_types.http_unprocessable_entity import HttpUnprocessableEntityError
 
-def person_creator_validator(http_request: HttpRequest):
+def person_creator_validator(http_request: HttpRequest) -> None:
 
     class BodyData(BaseModel):
         first_name: constr(min_length=1) # type: ignore

@@ -7,7 +7,7 @@ from src.main.composer.person_finder_composer import person_finder_composer
 
 from src.errors.error_handler import handle_errors
 
-person_route_bp = Blueprint('person_route_bp', __name__)
+person_route_bp = Blueprint('person_routes', __name__)
 
 @person_route_bp.route('/people', methods=['POST'])
 def create_person():

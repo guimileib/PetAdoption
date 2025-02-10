@@ -16,7 +16,7 @@ class PersonFinderController(PersonFinderControllerInterface):
     def __find_person_in_db(self, person_id: int) -> PeopleTable:
         person = self.__people_repository.get_person(person_id)
         if not person:
-            raise HttpNotFoundError('Pessoa não encontrada')
+            raise HttpNotFoundError('Pessoa não encontrada!')
         
         return person
     

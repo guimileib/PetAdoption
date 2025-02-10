@@ -29,7 +29,7 @@ class PeopleRepository(PeopleRepositoryInterface):
                 person = (
                     database.session
                         .query(PeopleTable)
-                        .outerjoin(PetsTable, PetsTable.id == PeopleTable.pet_id)
+                        .join(PetsTable, PetsTable.id == PeopleTable.pet_id)
                         .filter(PeopleTable.id == person_id)
                         .with_entities(
                             PeopleTable.first_name,

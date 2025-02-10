@@ -15,6 +15,7 @@ class DBConnectionHandler:
 
     def __enter__(self):
         session_maker = sessionmaker()
+        
         self.session = session_maker(bind=self.__engine)
         return self # Retorna o contexto da classe
 

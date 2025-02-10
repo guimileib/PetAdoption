@@ -6,10 +6,9 @@ class PetsTable(Base):
     __tablename__ = "pets" # o nome da tabela
 
     # Colunas:
-    id = Column(BIGINT, primary_key=True, autoincrement=True)
-    
+    id = Column(BIGINT, primary_key=True)
     name = Column(String, nullable=False)
     type = Column(String, nullable=False)
 
     def __repr__(self):
-        return f"Pet [name={self.name}, type={self.type}]"  # Retorna o nome e o tipo do pet
+        return f"Pets [name={self.name}, type={self.type}]"  # Retorna o nome e o tipo do pet

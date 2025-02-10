@@ -21,10 +21,10 @@ class PetListerController(PetListerControllerInterface):
         for pet in pets:
             formatted_pets.append({ "name": pet.name, "id": pet.id })
 
-            return {
-                "data": {
-                    "type": "Pets",
-                    "count": len(formatted_pets),
-                    "attributes": formatted_pets
-                }
+        return {
+            "data": {
+                "type": "Pets",
+                "count": len(formatted_pets),
+                "attributes": formatted_pets
             }
+        }
