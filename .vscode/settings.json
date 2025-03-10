@@ -8,8 +8,8 @@
         "**/__pycache__": true,
         "**/*.pytest_cache": true,
         "**/venv": true,
-        "**/storage.db": true,
-        "**/storage - (backup).db": true,
+        "**/storage.db": false,
+        "**/storage - (backup).db": false,
         "**/.pylintrc": false,
         "**/.pre-commit-config.yaml": false,
 

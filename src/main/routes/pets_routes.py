@@ -31,3 +31,6 @@ def delete_pets(name):
     except Exception as exception:
         http_response = handle_errors(exception)
         return jsonify(http_response.body), http_response.status_code
+ 
+ 
+ 

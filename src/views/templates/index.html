@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetAdoption - Adote um amigo!</title>
+    <link rel="stylesheet" href="/src/views/templates/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <span class="logo">🐾</span>
+                    <h1>PetAdoption</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#pets">Pets</a></li>
+                        <li><a href="#adoption">Adoção</a></li>
+                        <li><a href="#management">Gerenciamento</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <div class="hero">
+                <h2>Encontre seu novo melhor amigo!</h2>
+                <p>Nossa plataforma conecta pessoas a animais de estimação que precisam de um lar amoroso. Adotar é um ato de amor e responsabilidade, ajudando a reduzir o número de animais abandonados.</p>
+                <a href="#pets" class="btn btn-primary">Ver Pets Disponíveis</a>
+            </div>
+        </section>
+
+        <section id="pets" class="container">
+            <h2 class="section-title">Pets Disponíveis</h2>
+            <div class="card-grid" id="petsList">
+            </div>
+        </section>
+
+        <section id="adoption" class="container">
+            <h2 class="section-title">Formulário de Adoção</h2>
+            <form id="adoptionForm">
+                <div class="form-row">
+                    <label for="first_name">Nome:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="last_name">Sobrenome:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" min="18" required>
+                </div>
+                <div class="form-row">
+                    <label for="pet_id">Pet:</label>
+                    <select id="pet_id" name="pet_id" required>
+                        <option value="">Selecione um pet</option>
+                    </select>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Solicitar Adoção</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="management" class="container">
+            <h2 class="section-title">Gerenciamento</h2>
+            <div class="tabs">
+                <div class="tab active" data-tab="people">Pessoas</div>
+                <div class="tab" data-tab="pets">Pets</div>
+            </div>
+
+            <div id="people-tab" class="tab-content active">
+                <h3>Lista de Adotantes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Pet</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="peopleList">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="pets-tab" class="tab-content">
+                <h3>Lista de Pets</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="petsTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 PetAdoption - Todos os direitos reservados</p>
+                <div class="social-links">
+                    <a href="#">📱</a>
+                    <a href="#">💻</a>
+                    <a href="#">📧</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script href="/src/views/templates/script/script.js"></script>
+</body>
+</html>
